@@ -1,0 +1,61 @@
+.movie__grid {
+
+    display: flex;
+    overflow-x: auto;
+    
+
+}
+.movie__grid::-webkit-scrollbar {
+    width: 0;
+}
+.movie {
+    min-width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}   
+.movie img {
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+}
+.title {
+    position: absolute;
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: center;
+}
+.movie h6 {
+    
+    z-index: 100;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 834px) {
+    body {
+        width: 834px;
+        max-width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+    body {
+        width: 320px;
+        max-width: 100%;
+    }
+    .movie {
+        min-width: 200px;
+        height: 200px;
+    }
+}
